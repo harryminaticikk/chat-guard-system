@@ -1,0 +1,41 @@
+client.on("message", msg => { 
+    if(msg.guild.id !== "sunucuid") return;
+    if(msg.author.id === client.user.id) return;
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if (msg.content.toLowerCase().includes('@here')) {
+      msg.delete()
+      let e = db.fetch(`etikete_${msg.author.id}`)
+      if(!e) { return db.set(`etikete_${msg.author.id}`, 1); } else { 
+        if(e !== 3) { //5 etikette ban sayıyı değişttirmeyin değiştirseniz bütün 5 yazan yerleri değiştirin
+        db.add(`etikete_${msg.author.id}`, 1) 
+        let ez = db.fetch(`etikete_${msg.author.id}`)
+        if(ez === 3) { return msg.guild.members.ban(msg.author.id) && msg.channel.send("Kötü niyetli biri , **3 kere** `@here` etiketledi ve sunucudan engelledim.") } else { return; }
+       } else {
+          return msg.guild.members.ban(msg.author.id) && msg.channel.send("Kötü niyetli biri, **3 kere** `@here` etiketledi ve sunucudan engelledim.") 
+        }
+       }
+    }
+  })
+
+client.on("message", msg => { 
+    if(msg.guild.id !== "sunucuid") return;
+    if(msg.author.id === client.user.id) return;
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if(msg.member.roles.cache.has("rolid")) return; //Rollerin Everyone & Here kullanmamaları için özel rol ayarlayabilirsiniz.
+    if (msg.content.toLowerCase().includes('@everyone')) {
+      msg.delete()
+      let e = db.fetch(`etikete_${msg.author.id}`)
+      if(!e) { return db.set(`etikete_${msg.author.id}`, 1); } else { 
+        if(e !== 3) { //5 etikette ban sayıyı değişttirmeyin değiştirseniz bütün 5 yazan yerleri değiştirin
+        db.add(`etikete_${msg.author.id}`, 1) 
+        let ez = db.fetch(`etikete_${msg.author.id}`)
+        if(ez === 3) { return msg.guild.members.ban(msg.author.id) && msg.channel.send("Kötü niyetli biri, **3 kere** `@everyone` etiketledi ve sunucudan engelledim.") } else { return; }
+       } else {
+          return msg.guild.members.ban(msg.author.id) && msg.channel.send("Kötü niyetli biri, **3 kere** `@everyone` etiketledi ve sunucudan engelledim.") 
+        }
+       }
+    }
+  })
