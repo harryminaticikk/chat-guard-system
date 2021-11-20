@@ -1,1 +1,1 @@
-# chat-guard-system
+- Bu proje MIT Lisansıyla korunmaktadır, başka yerde paylaşılması sonucunda hukuki işlem başlatılacaktır.. Discord veya diğer sosyal medya üzerinden izin alarak paylaşabilirsiniz.
