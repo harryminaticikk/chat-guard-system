@@ -1,0 +1,11 @@
+client.on('message', async (msg) => {
+    if(!msg.guild) return;
+    if(msg.channel.id === "kanalid")  await msg.react('👍')
+    if(msg.channel.id === "kanalid")  await msg.react('👎')
+    if(msg.channel.id === "kanalid")  await msg.react('👍')
+    if(msg.channel.id === "kanalid")  await msg.react('👎')
+    if(msg.channel.id === "kanalid")  await msg.react('👍')
+    if(msg.channel.id === "kanalid")  await msg.react('👎')
+    if(msg.channel.id === "kanalid")  await msg.react('👍')
+    if(msg.channel.id === "kanalid")  await msg.react('👎')
+    });
