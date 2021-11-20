@@ -1,0 +1,5 @@
+client.on('ready', () => {
+const ch = client.channels.cache.get('kanalid');
+
+ch.join()
+})
