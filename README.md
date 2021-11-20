@@ -1,4 +1,4 @@
-# Önemli
+ Önemli
 - Sonunda "main" yazan her şey ana dosyaya atılacaktır. (package.json main: kısmından öğrenebilirsiniz)
 - Bana Discord ve Gmail üzerinden ulaşabilirsiniz. Alt kısımda bilgiler yer almaktadır.
 - Tüm kodlar bana ait değildir, kimin olduğu yazmaktadır.
