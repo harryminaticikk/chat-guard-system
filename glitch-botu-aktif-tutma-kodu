@@ -8,4 +8,5 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 28000);
 
+
  ⛔ Önemli: Buradaki kodları ana dosyanız içerisinde "const" ile başlıyan ilk kod satırlarının bittiği kısmın altına ekleyin yoksa çalışmaz.
