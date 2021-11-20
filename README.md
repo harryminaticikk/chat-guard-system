@@ -1,1 +1,1 @@
-- Bu proje MIT Lisansıyla korunmaktadır, başka yerde paylaşılması sonucunda hukuki işlem başlatılacaktır.. Discord veya diğer sosyal medya üzerinden izin alarak paylaşabilirsiniz.
+- Bu proje MIT Lisansıyla korunmaktadır, başka yerde paylaşılması ve kodu değiştirilip alıntı yapılması sonucunda hukuki işlem başlatılacaktır.. Discord veya diğer sosyal medya üzerinden içerik sahibinden izin alarak paylaşabilirsiniz, onun dışında paylaşamanız söz konusu dahi olamaz.
