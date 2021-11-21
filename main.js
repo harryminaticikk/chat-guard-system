@@ -20,4 +20,39 @@ fs.readdir('./commands/', (err, files) => {
   });
 })
 
-client.login(config.token)
+client.login(process.env.token)
+
+
+/* 
+================================================================
+| - Sa-As Sistemi (Satır: 40)
+| - 
+| -
+| -
+| -
+| -
+================================================================
+*/
+
+
+
+
+client.on("message", async msg => {
+if(msg.channel.id === "kanalid") return;
+if(msg.channel.id === "kanalid") return;
+if(msg.channel.id === "kanalid") return;
+if(msg.channel.id === "kanalid") return;
+if(msg.channel.id === "kanalid") return;
+if(msg.channel.id === "kanalid") return;
+        if (
+            msg.content.toLowerCase() == "sa" ||
+            msg.content.toLowerCase() == "saa" ||
+            msg.content.toLowerCase() == "saaa" ||
+            msg.content.toLowerCase() == "slm" ||
+            msg.content.toLowerCase() == "merhaba" ||
+            msg.content.toLowerCase() == "Selam" 
+        )
+            if (msg.author.id == "745286954752671744") { msg.reply('Selam Kurucm! Nasılsın? Çay kahve ne alırsın??') } else {
+            return msg.reply("Aleyküm selam hoşgeldin, nasılsın dostum?");
+            }
+});
