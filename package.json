@@ -1,0 +1,26 @@
+{
+  "name": "discord-chat-guard-altyapi",
+  "version": "0.0.1",
+  "description": "Discord.js v12 - Chat Guard Bot Altyapısı.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+ "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/glitch-hello-node"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "Rosto",
+    "chat guard altyapı"
+  ]
+}
